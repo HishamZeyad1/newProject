@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .grid-contsiner{text-align: center;display:grid;grid-template-columns:repeat(3,1fr);
+        /* grid-template-columns:1fr 1fr 1fr; *//* grid-template-columns:repeat(3,33%); *//*grid-template-columns:30% 30% 30%;*/
+        /* grid-template-rows: 200px 300px 200px; grid-template-rows:repeat(3,300px);grid-template-rows:1fr 1fr 1fr;grid-template-rows:repeat(3,1fr); */
+        grid-auto-rows:minmax(150px,auto);
+        /* grid-column-gap: 10px;
+        grid-row-gap: 10px; */
+        grid-gap: 10px 20px;
+        }
+        .grid-contsiner>.item{background:#333;color:white;padding:20px;}
+        div.grid-nested{display: grid;grid-template-columns:repeat(2,1fr);grid-gap:10px 1px;}
+        div.grid-nested p{background-color: white;color:black;padding:0;margin:0;position:relative;}
+            div.grid-nested p label{top:50%;left:50%; transform: translate(-50%,-50%)}
+    </style>
+</head> 
+<body>
+    <div class="grid-contsiner">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus incidunt ut mollitia dignissimos nesciunt quibusdam nisi quam, laboriosam harum dolorem distinctio. Fuga quam, molestiae impedit culpa officiis dignissimos aut ratione.
+        Eum reiciendis odio eius eaque soluta perferendis officiis exercitationem vitae libero excepturi in tenetur itaque aspernatur cumque facilis similique, ipsum possimus quasi saepe, repudiandae rerum cupiditate assumenda? Temporibus, repellat fuga?
+        Quae dolores sunt ex cupiditate voluptate velit temporibus quasi nam recusandae culpa non ut aliquid ducimus nulla beatae voluptatum reiciendis perspiciatis possimus tempore suscipit asperiores, error odio! Reiciendis, totam et.</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item grid-nested">
+           <p><label for="">1</label></p>
+           <p><label for="">2</label></p>
+           <p><label for="">3</label></p>
+           <p><label for="">4</label></p>
+        </div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+</html>

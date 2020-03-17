@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        nav{width:100%;;background-color: grey;padding:10px;}
+        nav a{background: black;text-decoration: none;padding: 10px;}
+        div.ln{width:100px;height:100px;background: black;color: wheat;line-height: 100px;text-align: center;}
+        div.pd{background: black;color: wheat;padding: 40px;}
+        table{width:200px;height:200px;background: black;color: wheat;}
+        div.table{width:200px;height:200px;background: black;color: wheat;display: table}
+        div.table .trtd{display: table-cell;vertical-align: middle;}
+        div.flex{width:200px;height:100px;background: black;color: wheat;display:flex;flex-direction: column;justify-content: center}
+        
+        div.ghost{width:200px;height:200px;background: green;color: wheat;}
+        div.ghost:before{content:"";width:3px;height:100%;background: blue;display: inline-block;vertical-align: middle;}
+        div.ghost p{display:inline-block;vertical-align: middle;;width:70px;padding: 10px;background:coral}
+    </style>
+</head>
+<body>
+<div>************************************************************************************************************************************</div>
+<!--Vertically-Centering Inline Element-Single Line-->
+<!--Method one-->
+<nav>
+    <a href="#">link1</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+</nav>
+<div>******************</div>
+<!--Method two-->
+<div class="ln">
+    this is div 
+</div>
+<div>************************************************************************************************************************************</div>
+<!-- Vertically: Centering Inline Element - Multiple lines -->
+<div class="pd">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, aliquam. Pariatur omnis iusto, voluptas asperiores laboriosam ut amet,
+    id distinctio voluptates ab repudiandae, optio vero velit nemo beatae cum sit.
+</div>
+<div>******************</div>
+<table>
+    <tr>
+        <td>this is p this is p this is p this is p this is p this is p this is p</td>
+    </tr>
+</table>
+<div>******************</div>
+<div class="table">
+    <p class="trtd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officia distinctio officiis magni, reprehenderit ducimus nemo. 
+       Libero repellendus debitis accusamus autem! Fugit, neque! Eos quibusdam nihil in sapiente est quae.</p>
+</div>
+<div>******************</div>
+<div class="flex">
+    Lorem, ipsum dolor sit amet consectetur sit amet conse
+</div>
+<div>******************</div>
+<div class="ghost">
+    <p>this is p this is p this is p this is p </p>
+</div>
+
+</body>
+</html>

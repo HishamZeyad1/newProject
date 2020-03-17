@@ -1,0 +1,11 @@
+div.container-fluid{
+    background-color: brown;
+}
+div.container{
+    background-color: cyan;
+    border: 3px solid #000;
+
+}
+div.container .row .col-sm,div.container .row .col{
+    border: 3px solid #000;
+}

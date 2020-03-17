@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{margin:0;padding: 0;}
+        div.unwh{height:300px;background:black;position:relative}
+        div.unwh p{width:100px;height:120px;padding:10px;background: blue;position: absolute;left:50%;top:50%;
+        margin-left:-60px;margin-top: -70px; }
+       
+        div.knwh{height:300px;background:black;position:relative}
+        div.knwh p{padding:10px;background: blue;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
+            *{margin:0;padding: 0;}
+
+        div.flex{height:300px;background:black;display: flex;flex-direction:row;justify-content: center;align-items:center}
+        div.flex p{width:100px;height:100px;;padding:10px;background: blue;}
+
+        div.Grid{height:300px;background:black;display: grid;}
+        div.Grid p{width:100px;height:100px;;padding:10px;background: blue;margin:auto}
+    </style>
+</head>
+<body>
+    <div class="unwh">
+        <p>this is p this is p this is p this is p</p>
+    </div> 
+    <br>
+
+    <div class="knwh">
+            <p>this is p this is p this is p this is p</p>
+    </div>  
+    <br>
+
+    <div class="flex">
+            <p>this is p this is p this is p this is p</p>
+    </div>  
+    <br>
+    <div class="Grid">
+            <p>this is p this is p this is p this is p</p>
+    </div>  
+
+</body>
+</html>
